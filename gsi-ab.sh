@@ -13,21 +13,21 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	cp --parents /src/app/AccountManager/AccountManager.apk /mnt/system/system/app/AccountManager/
-	cp /src/app/Apps/Apps.apk /mnt/system/system/app/Apps/Apps.apk
-	cp /src/app/MagicEarth/MagicEarth.apk /mnt/system/system/app/MagicEarth/MagicEarth.apk
-	cp /src/app/Message/Message.apk /mnt/system/system/app/Message/Message.apk
-	cp /src/app/Notes/Notes.apk /mnt/system/system/app/Notes/Notes.apk
-	cp /src/app/Tasks/Tasks.apk /mnt/system/system/app/Tasks/Tasks.apk
-	cp /src/app/Weather/Weather.apk /mnt/system/system/app/Tasks/Tasks.apk
-	cp /src/app/Calendar/Calendar.apk /mnt/system/system/app/Calendar/Calendar.apk
-	cp /src/priv-app/BlissLauncher/BlissLauncher.apk /mnt/system/system/app/BlissLauncher/BlissLauncher.apk
-	cp /src/app/BlissIconPack/BlissIconPack.apk /system/system/app/BlissIconPack/BlissIconPack.apk
+	cp --parents /src/app/Apps/Apps.apk /mnt/system/system/app/Apps/
+	cp --parents /src/app/MagicEarth/MagicEarth.apk /mnt/system/system/app/MagicEarth/
+	cp --parents /src/app/Message/Message.apk /mnt/system/system/app/Message/
+	cp --parents /src/app/Notes/Notes.apk /mnt/system/system/app/Notes/
+	cp --parents /src/app/Tasks/Tasks.apk /mnt/system/system/app/Tasks/
+	cp --parents /src/app/Weather/Weather.apk /mnt/system/system/app/Tasks/
+	cp --parents /src/app/Calendar/Calendar.apk /mnt/system/system/app/Calendar/
+	cp --parents /src/priv-app/BlissLauncher/BlissLauncher.apk /mnt/system/system/app/BlissLauncher/
+	cp --parents /src/app/BlissIconPack/BlissIconPack.apk /system/system/app/BlissIconPack/
 	rm /mnt/system/system/product/app/messaging/messaging.apk
 	rm /mnt/system/system/product/app/messaging/
-	cp /src/media/bootanimation.zip /mnt/system/system/media/bootanimation.zip
-	cp /src/app/WallpaperPicker/WallpaperPicker.apk /mnt/system/system/app/WallpaperPicker/WallpaperPicker.apk
-	cp /src/app/WallpaperBackup/WallpaperBackup.apk /mnt/system/system/app/WallpaperBackup/WallpaperBackup.apk
-	cp /src/app/Browser/Browser.apk /mnt/system/system/app/Browser/Browser.apk
+	cp --parents /src/media/bootanimation.zip /mnt/system/system/media/
+	cp --parents /src/app/WallpaperPicker/WallpaperPicker.apk /mnt/system/system/app/WallpaperPicker/
+	cp --parents /src/app/WallpaperBackup/WallpaperBackup.apk /mnt/system/system/app/WallpaperBackup/
+	cp --parents /src/app/Browser/Browser.apk /mnt/system/system/app/Browser/
 	echo
 	echo
 	echo "Your Lineage phone is nearly your e-ify phone!"
