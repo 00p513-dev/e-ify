@@ -12,7 +12,7 @@ read -p "Are you sure you want to continue? " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-	cp /src/app/AccountManager/AccountManager.apk /mnt/system/system/app/AccountManager/AccountManager.apk
+	cp --parents /src/app/AccountManager/AccountManager.apk /mnt/system/system/app/AccountManager/
 	cp /src/app/Apps/Apps.apk /mnt/system/system/app/Apps/Apps.apk
 	cp /src/app/MagicEarth/MagicEarth.apk /mnt/system/system/app/MagicEarth/MagicEarth.apk
 	cp /src/app/Message/Message.apk /mnt/system/system/app/Message/Message.apk
